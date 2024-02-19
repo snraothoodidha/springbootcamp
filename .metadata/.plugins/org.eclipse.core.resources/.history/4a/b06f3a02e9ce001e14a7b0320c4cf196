@@ -1,0 +1,5 @@
+package com.springbc.first;
+
+public class LoanResponse {
+
+}
