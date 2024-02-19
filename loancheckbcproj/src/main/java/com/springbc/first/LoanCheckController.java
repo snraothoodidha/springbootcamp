@@ -35,6 +35,7 @@ public class LoanCheckController {
 		PostResponse pr = RestClient.create().get().uri(url+id).retrieve().body(PostResponse.class);
 		
 		System.out.println("in post msg "+id);
+
 		
 		return ResponseEntity.ok(pr);
 		
