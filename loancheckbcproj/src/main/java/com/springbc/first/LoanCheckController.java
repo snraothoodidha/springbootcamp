@@ -30,7 +30,7 @@ public class LoanCheckController {
 	
 	@GetMapping("/posts/{id}")
 	public ResponseEntity<PostResponse> getPostTest(@PathVariable("id")String id){
-		String url= "https://jsonplaceholder.typicode.com/posts";
+		String url= "https://jsonplaceholder.typicode.com/posts/";
 		
 		PostResponse pr = RestClient.create().get().uri(url+id).retrieve().body(PostResponse.class);
 		
